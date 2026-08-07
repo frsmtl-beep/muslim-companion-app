@@ -141,3 +141,20 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Expo
+.expo/
+ios/
+android/
+web-build/
+expo-env.d.ts
+
+# Environment
+.env.local
+.env.*.local
+
+# EAS
+.eas/
+
+# Temporary files
+tmp/
