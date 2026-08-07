@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Muslim Companion",
+    "slug": "muslim-companion-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a3a5c"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muslimcompanion.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Muslim Companion uses your location to calculate accurate prayer times and Qibla direction.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Muslim Companion uses your location to calculate accurate prayer times and Qibla direction."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1a3a5c"
+      },
+      "package": "com.muslimcompanion.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#1a3a5c",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Muslim Companion uses your location for prayer times and Qibla direction."
+        }
+      ]
+    ],
+    "scheme": "muslim-companion",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
